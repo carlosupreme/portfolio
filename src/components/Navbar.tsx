@@ -1,23 +1,6 @@
-import {Link} from "react-router-dom";
 import Theme from "./Theme.tsx";
 import HireMeButton from "./HireMeButton.tsx";
-
-type NavigationButtonProps = {
-    icon: string, route: string
-}
-
-function NavigationButton({icon, route}: NavigationButtonProps) {
-    return (
-        <Link to={route}
-              className="dark:hover:bg-dark-nav-bg-button-hover dark:text-dark-nav-button dark:hover:text-white
-              inline-flex items-center justify-center w-8 h-8
-              transition-colors
-              rounded-full"
-        >
-            <i className={`${icon} `}></i>
-        </Link>
-    );
-}
+import NavigationButton from "./NavigationButton.tsx";
 
 export default function Navbar() {
     return (
@@ -28,22 +11,22 @@ export default function Navbar() {
                     icon={"fa-solid fa-house"}/>
 
                 <NavigationButton
-                    route={"/"}
+                    route={"/me"}
                     icon={"fas fa-user"}/>
 
                 <NavigationButton
-                    route={"/"}
+                    route={"/projects"}
                     icon={"fa-solid fa-briefcase"}/>
 
                 <NavigationButton
-                    route={"/"}
+                    route={"/blog"}
                     icon={"fa-solid fa-book-open-reader"}/>
             </div>
 
-           <div className="flex gap-4">
-               <Theme />
-               <HireMeButton />
-           </div>
+            <div className="flex gap-4">
+                <Theme/>
+                <HireMeButton/>
+            </div>
         </div>
     );
 }
