@@ -4,8 +4,8 @@ import NavigationButton from "./NavigationButton.tsx";
 
 export default function Navbar() {
     return (
-        <div className="dark:bg-dark dark:text-dark-font rounded-lg px-4 flex items-center justify-between">
-            <div className="flex gap-4 items-center py-4">
+        <div className="dark:bg-dark dark:text-dark-font border dark:border-dark-border rounded-lg px-4 flex items-center justify-between">
+            <div className="flex gap-4 items-center py-3">
                 <NavigationButton
                     route={"/"}
                     icon={"fa-solid fa-house"}/>
