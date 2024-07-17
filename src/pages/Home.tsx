@@ -17,7 +17,7 @@ export default function Home() {
             </div>
 
             <div className=" w-full flex flex-col items-center justify-center">
-                <div className="border-2 dark:border-dark-border dark:bg-dark-bg-section rounded-full p-2 my-3">
+                <div className="border dark:border-white/10 dark:bg-dark-bg-section rounded-full p-2 my-3">
                     <img src={me} alt="Me" className="w-36 h-36 rounded-full object-cover"/>
                 </div>
                 <h1 className="dark:text-white font-semibold text-3xl mb-3">I'm Carlos Sosa</h1>

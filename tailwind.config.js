@@ -10,7 +10,7 @@ export default {
                 'dark-profound': '#161717',
                 'dark-font': '#b0b1b1',
                 'dark-font-title': '#C0C0C0',
-                'dark-border': '#343434',
+                'dark-border': '#2b2b2b',
                 'dark-bg-button': '#393938',
                 'dark-bg-section': '#2d2d2c',
                 'dark-bg-item': '#373737',
