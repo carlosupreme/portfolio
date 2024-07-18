@@ -2,6 +2,9 @@ import me from "../assets/me-memoji.png";
 import HireMeButton from "../components/HireMeButton.tsx";
 import CopyEmail from "../components/CopyEmailButton.tsx";
 import BulletTitle from "../components/BulletTitle.tsx";
+import Item from "../components/Item.tsx";
+import Section from "../components/Section.tsx";
+import ProjectPreview from "../components/projects/ProjectPreview.tsx";
 
 export default function Home() {
     return (
@@ -27,15 +30,25 @@ export default function Home() {
                 </div>
             </div>
 
-            <section className="dark:bg-dark-bg-section p-4 w-full flex flex-col gap-4 rounded-xl">
-                <article className="dark:bg-dark-bg-item h-32 w-full rounded-xl">
+            <Section
+                title={"My projects"}
+                viewMoreLink={"/projects"}
+            >
 
-                </article>
+                <ProjectPreview project={{
+                    id: "1",
+                    name: "FootballPass | Soccer field manager",
+                    description: "A web application to manage leagues, seasons, teams and player attendance in matches",
+                    skills: ["php", "laravel", "mysql", "figma", "alpinejs", "tailwindcss"]
+                }}/>
 
-                <article className="dark:bg-dark-bg-item h-32 w-full rounded-xl">
-
-                </article>
-            </section>
+                <ProjectPreview project={{
+                    id: "2",
+                    name: "Problem Details Http",
+                    description: "A library to handle problem details in HTTP responses as defined in RFC 7807",
+                    skills: ["typescript", "npm", "jest", "webstorm", "ubuntu"]
+                }}/>
+            </Section>
         </div>
     )
 }
