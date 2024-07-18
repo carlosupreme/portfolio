@@ -2,7 +2,6 @@ import me from "../assets/me-memoji.png";
 import HireMeButton from "../components/HireMeButton.tsx";
 import CopyEmail from "../components/CopyEmailButton.tsx";
 import BulletTitle from "../components/BulletTitle.tsx";
-import Item from "../components/Item.tsx";
 import Section from "../components/Section.tsx";
 import ProjectPreview from "../components/projects/ProjectPreview.tsx";
 
@@ -34,6 +33,8 @@ export default function Home() {
                 title={"My projects"}
                 viewMoreLink={"/projects"}
             >
+
+                <h2 className="dark:text-dark-font font-semibold pl-2">2024</h2>
 
                 <ProjectPreview project={{
                     id: "1",
