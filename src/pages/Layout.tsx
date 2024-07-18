@@ -1,5 +1,6 @@
 import {Outlet} from "react-router-dom";
 import Navbar from "../components/Navbar.tsx";
+import Footer from "../components/Footer.tsx";
 
 export default function Layout() {
     return (
@@ -9,7 +10,10 @@ export default function Layout() {
 
                 <main className="pt-8 px-2 pb-2 dark:text-dark-font dark:bg-dark w-full rounded-xl border border-dark-border">
                     <Outlet/>
+                    <Footer/>
                 </main>
+
+
             </div>
         </div>
     )
