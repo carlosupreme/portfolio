@@ -82,7 +82,7 @@ export default function Home() {
                         description: "I participated in a 24hrs Hackathon with the second place winning project PipeFix. Developing a system for a plumbing company.",
                         skills: ["nodejs", "mongodb", "express", "windows", "postman"],
                         image: "la-salle-1.jpg",
-                        when: "From 15 Jun 2024 to 16 Jun 2024",
+                        when: "From 23 May 2024 to 24 May 2024",
                         where: "Universidad La Salle Oaxaca, Oaxaca, México"
                     }}
                 />
