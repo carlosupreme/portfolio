@@ -10,7 +10,7 @@ export default function Medal({podium}: { podium: "gold" | "silver" | "bronze" }
     }
 
     return (
-        <img src={podiumImage[podium]} alt="third place"
-             className="w-10 absolute -right-5 -top-2 transition-transform group-hover:scale-150"/>
+        <img src={podiumImage[podium]} alt={`${podium} medal`}
+             className="w-10 absolute -right-5 -top-2"/>
     )
 }
