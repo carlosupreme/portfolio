@@ -1,11 +1,11 @@
 import Theme from "./Theme.tsx";
-import HireMeButton from "./HireMeButton.tsx";
 import NavigationButton from "./NavigationButton.tsx";
+import LangButton from "./LangButton.tsx";
 
 export default function Navbar() {
     return (
-        <div className="sticky top-1 w-full max-w-2xl">
-            <div className="dark:bg-dark dark:text-dark-font border dark:border-dark-border rounded-xl px-4 flex items-center justify-between">
+        <div className="sticky top-0 w-full max-w-2xl z-10">
+            <div className="dark:bg-dark dark:text-dark-font border dark:border-dark-border px-4 flex items-center justify-between">
                 <div className="flex gap-2 items-center py-2.5">
                     <NavigationButton
                         route={"/"}
@@ -26,7 +26,7 @@ export default function Navbar() {
 
                 <div className="flex gap-4">
                     <Theme/>
-                    <HireMeButton/>
+                    <LangButton/>
                 </div>
             </div>
         </div>

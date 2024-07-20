@@ -1,17 +1,16 @@
-import HireMeButton from "./HireMeButton.tsx";
-import CopyEmail from "./CopyEmailButton.tsx";
+
 import BulletTitle from "./BulletTitle.tsx";
+import ContactMeButton from "./ContactMeButton.tsx";
 
 
 export default function Footer() {
     return (
         <footer className="flex flex-col gap-2">
             <div className="py-8 px-2 flex flex-col gap-2 items-center justify-center dark:text-dark-font">
-                <h2 className="font-bold text-3xl dark:text-white text-center">Let's work together.</h2>
-                <h3 className="text-lg">Creating user experience and software</h3>
-                <div className="flex gap-4 items-center mt-1">
-                    <HireMeButton/>
-                    <CopyEmail/>
+                <h2 className="font-bold text-3xl dark:text-white text-center"> Get in touch </h2>
+                <h3 className="text-lg text-center">Let's improve user experience developing awesome software</h3>
+                <div className="flex justify-center items-center mt-1">
+                    <ContactMeButton/>
                 </div>
             </div>
 
@@ -69,14 +68,11 @@ function SocialMediaButton({icon, link}: { icon: string, link: string }) {
 function Copyright() {
     const email = "carlosupremedev@gmail.com"
     return (
-        <div>
-            <div className="text-opacity-50 w-full rounded-xl dark:bg-dark-bg-section py-6 px-4 text-center">
-                <h5>
-                    © 2024 Portfolio
-                    <br/>
-                    by <a className="underline text-white" href={`mailto:${email}`}>Carlos Sosa</a>
-                </h5>
-            </div>
-        </div>
+        <h5 className="text-sm w-full p-4 text-center">
+            &copy; {new Date().getFullYear()} - All rights reserved - Made by &nbsp;
+            <a className="underline text-white" href={`mailto:${email}`}>
+                Carlos Sosa
+            </a>
+        </h5>
     )
 }

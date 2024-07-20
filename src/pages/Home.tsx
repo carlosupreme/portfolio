@@ -1,5 +1,5 @@
 import me from "../assets/me-memoji.png";
-import HireMeButton from "../components/HireMeButton.tsx";
+import ContactMeButton from "../components/ContactMeButton.tsx";
 import CopyEmail from "../components/CopyEmailButton.tsx";
 import BulletTitle from "../components/BulletTitle.tsx";
 import Section from "../components/Section.tsx";
@@ -26,7 +26,7 @@ export default function Home() {
                 <h4>Currently studying engineering.</h4>
 
                 <div className="flex gap-4 items-center mt-4">
-                    <HireMeButton/>
+                    <ContactMeButton/>
                     <CopyEmail/>
                 </div>
             </div>
