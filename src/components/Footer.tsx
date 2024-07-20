@@ -1,4 +1,3 @@
-
 import BulletTitle from "./BulletTitle.tsx";
 import ContactMeButton from "./ContactMeButton.tsx";
 

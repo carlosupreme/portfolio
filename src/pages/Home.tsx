@@ -1,6 +1,5 @@
 import me from "../assets/me-memoji.png";
 import ContactMeButton from "../components/ContactMeButton.tsx";
-import CopyEmail from "../components/CopyEmailButton.tsx";
 import BulletTitle from "../components/BulletTitle.tsx";
 import Section from "../components/Section.tsx";
 import ProjectPreview from "../components/projects/ProjectPreview.tsx";
@@ -25,10 +24,7 @@ export default function Home() {
                 <h4>Software developer from Oaxaca, México.</h4>
                 <h4>Currently studying engineering.</h4>
 
-                <div className="flex gap-4 items-center mt-4">
-                    <ContactMeButton/>
-                    <CopyEmail/>
-                </div>
+                <ContactMeButton/>
             </div>
 
             <Section title={"My projects"} viewMoreLink={"/projects"}>
@@ -59,7 +55,7 @@ export default function Home() {
             <Section title={"My experiences"} viewMoreLink={"/blog"}>
 
                 <div className="flex items-center gap-1">
-                    <Pin className="w-4 h-4" />
+                    <Pin className="w-4 h-4"/>
                     <h2 className="dark:text-dark-font font-semibold">Pinned</h2>
                 </div>
 
