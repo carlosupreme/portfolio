@@ -1,9 +1,9 @@
 import BulletTitle from "../components/BulletTitle.tsx";
 import me from "../assets/me-1.jpg";
 import {TypeAnimation} from "react-type-animation";
-import Item from "../components/Item.tsx";
 import 'react-slideshow-image/dist/styles.css'
 import {Slide} from "react-slideshow-image";
+import LearningJourney from "../components/LearningJourney.tsx";
 
 
 export default function AboutMe() {
@@ -47,170 +47,11 @@ export default function AboutMe() {
             <HobbiesSlide/>
 
             <h1 className="dark:text-white font-semibold text-3xl mb-3">My learning journey</h1>
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned HTML and CSS</p>
-                    </div>
 
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Youtube</p>
-                    </div>
 
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">June 2021</p>
-                    </div>
-                </div>
-            </Item>
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned Javascript and Git </p>
-                    </div>
+            <LearningJourney/>
 
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Youtube</p>
-                    </div>
 
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">September 2021</p>
-                    </div>
-                </div>
-            </Item>
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned Java and Object Oriented Programming</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Instituto Tecnológico de Oaxaca</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">January 2022</p>
-                    </div>
-                </div>
-            </Item>
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned PHP and Laravel</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Remote trainer</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">July 2022</p>
-                    </div>
-                </div>
-            </Item>
-
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned SQL </p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Platzi</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">July 2022</p>
-                    </div>
-                </div>
-            </Item>
-
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Started using Ubuntu as my primary and unique OS </p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">July 2022</p>
-                    </div>
-                </div>
-            </Item>
-
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Started participating in contests</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">September 2022</p>
-                    </div>
-                </div>
-            </Item>
-
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned Spring and REST APIs</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Youtube</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">January 2023</p>
-                    </div>
-                </div>
-            </Item>
-
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned SOLID and CQRS </p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Uncle bob, Codely</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">June 2023</p>
-                    </div>
-                </div>
-            </Item>
-
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned React, Express and Typescript</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Docs</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Dec 2023</p>
-                    </div>
-                </div>
-            </Item>
-
-            <Item>
-                <div className="flex flex-col gap-3 w-full">
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Learned BDD, TDD and DDD</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">Remote trainer and Uncle Bob courses</p>
-                    </div>
-
-                    <div className="flex items-center gap-2">
-                        <p className="text-gray-400 text-sm">July 2024</p>
-                    </div>
-                </div>
-            </Item>
         </div>
     )
 }
