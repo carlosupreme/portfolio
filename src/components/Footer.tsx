@@ -7,7 +7,7 @@ export default function Footer() {
         <footer className="flex flex-col gap-2">
             <div className="py-8 px-2 flex flex-col gap-2 items-center justify-center dark:text-dark-font">
                 <h2 className="font-bold text-3xl dark:text-white text-center"> Get in touch </h2>
-                <h3 className="text-lg text-center">Let's improve user experience developing awesome software</h3>
+                <h3 className="text-lg text-center">Let's improve people experience developing awesome software</h3>
                 <div className="flex justify-center items-center mt-1">
                     <ContactMeButton/>
                 </div>
@@ -45,8 +45,12 @@ function SocialMedia() {
         <div className="w-full rounded-xl dark:bg-dark-bg-section py-6 px-4 flex justify-between">
             <BulletTitle text={"Follow Me"}/>
             <div className="flex gap-1">
-                {socialMediaLinks.map((link) => (
-                    <SocialMediaButton icon={link.icon} link={link.link}/>
+                {socialMediaLinks.map((link, index) => (
+                    <SocialMediaButton
+                        key={index}
+                        icon={link.icon}
+                        link={link.link}
+                    />
                 ))}
             </div>
         </div>
